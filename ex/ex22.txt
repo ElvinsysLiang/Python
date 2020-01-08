@@ -1,0 +1,92 @@
+以下是学习python的练习中学到的一些关键字以及其他内容的相关提要
+
+print "string"           # print后面用双引号括住的，可以在终端打印字符串
+#......                  # 用“#”可以进行单行的注释
+#  -*- coding:utf-8 -*-  # 在文件头部标注这个注释，才能在文件中使用中文
+"....#...."              # 在双引号里面的#只作为字符输出，不产生注释作用
++ - * / %                # 数学符号
+< > <= >= ==             # 逻辑符号，返回True或者False（不等于呢？）
+a = 1 + 2.0              # a转化为浮点型变量
+(^*/+-                   # 符号优先级，括号指数乘除加减PEMDAS
+_iCount3 = 5             # 变量名由下划线字母和数字组成
+%d %s %r                 # 格式化输出，%d为整数，%s为字符串，%r是不管什么都打印，多用于调试
+"..'..'.."               # 可以在‘’里面放“”，或者在“”里面放‘’
+a = round(1.7333)        # 对1.7333进行四舍五入赋给变量a
+print a， b              # print后面还可以直接跟变量名，多个变量也可以
+"""
+...
+"""                      # 用"""三引号，可以括起多行的字符串
+\\                       # 转义字符：反斜杠(\)
+\'                       # 单引号(')
+\"                       # 双引号(")
+\a                       # ASCII响铃符(BEL)
+\b                       # ASCII退格符(BS)
+\f                       # ASCII进纸符(FF)
+\n                       # ASCII换行符(LF)
+\N(name)                 # unicode数据库中的字符名
+\r                       # ASCII回车符(CR)
+\t                       # ASCII水平制表符(TAB)
+\uxxxx                   # 值为16位十六进制xxxx的字符（仅用于unicode）
+\Uxxxx                   # 值为32位十六进制xxxx的字符（仅用于unicode）
+\v                       # ASCII垂直制表符(VT)
+\ooo                     # 值为八进制值ooo的字符
+\xhh                     # 值为十六进制数hh的字符
+''' """                  # 两个都差不多
+age = raw_input()        # 从标准输入中读入数据丢进变量age中
+age = raw_input(age?)    # 从新的一行中打印“age？”并接受用户输入
+print age，              # 在print最后加入“，”就不会打印自身的换行符，打印完age后不会换行
+input() raw_input()      # 一般推荐使用raw_input()
+print ..., raw_input()   # 不能这样，print和raw_input()不能堆在一起
+from sys import argv     # 从sys库中提取argv模块用于对命令行输入参数进行分包
+script,first = argv      # 从参数中分包，第一个参数script为程序名，first是第二个参数
+int(a)                   # 把变量a强制转换成整形
+float(b)                 # 把变量b强制转换成浮点型
+print "%s,%s" % (a,b)    # 以字符串形式格式化输出变量a和变量b，ab通过括号扩起来
+txt = open(filename)     # 用open函数打开一个文件，并创建文件对象txt
+txt = open(fn,'w')       # 以写模式打开，若文件存在，则先清空文件
+txt.close()              # 用close方法，关闭删除txt文件对象
+string = txt.read()      # 用read方法把从文件读取到的内容丢给变量string
+txt.write(age)           # 用write方法把变量age的内容写到文件txt对象中
+txt.truncate()           # 用truncate方法清空文件对象txt，如果用'w'打开的，可不清空
+from os.path import exists  # exists()函数用到的模块
+exists(filename)         # 检查filename的文件是否存在，返回True或者False
+len(a)                   # 返回变量a的长度，和strlen()的功能一样
+def funName(var):
+    print something      # 函数的基本格式，函数体用四个空格缩进，函数参数可以传递数字，
+                           # 变量和数学表达式，或者变量和数学表达式合起来用也可以
+    return something     # 用return返回必要的数据，或者不return也可以
+f.seek(0)                # seek方法用来把运行的指针指向制定的位置
+f.readline()             # readline方法用来读取从seek指针开始到换行符'\n'的内容，指针
+                           #  读取完毕后，指针到达'\n'后面的一个字符
+x += y                   # 和 x = x + y 的功能是一样的
+int(raw_input())         # 把输入的字符串转换为整形，但如果输入的不是数字，就会报错        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

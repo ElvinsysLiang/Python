@@ -1,0 +1,7 @@
+glo_1 = 1
+
+def fun():
+	glo_1 = 2
+	print glo_1
+
+print glo_1
